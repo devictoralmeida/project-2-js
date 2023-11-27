@@ -292,49 +292,23 @@ form_08.addEventListener('submit', (e) => {
 form_09.addEventListener('submit', (e) => {
     e.preventDefault()
     const answer = document.querySelector('.answer-09')
-    const input01 = document.querySelector('.input1-question-09')
-    const input02 = document.querySelector('.input2-question-09')
-    const input03 = document.querySelector('.input3-question-09')
-    const input04 = document.querySelector('.input4-question-09')
-    const input05 = document.querySelector('.input5-question-09')
-
-    const inputValues = `${input01.value}-${input02.value}-${input03.value}-${input04.value}-${input05.value}`
-
-    
-
-    const result = sumSmallerNumbers(inputValues)
+    const input = document.querySelector('.input-question-09')
+   
+    const result = sumSmallerNumbers(input.value)
 
     answer.innerText = result
-
-    input01.value = ''
-    input02.value = ''
-    input03.value = ''
-    input04.value = ''
-    input05.value = ''
+    input.value = ''
 })
 
 form_10.addEventListener('submit', (e) => {
     e.preventDefault()
     const answer = document.querySelector('.answer-10')
-    const input01 = document.querySelector('.input1-question-10')
-    const input02 = document.querySelector('.input2-question-10')
-    const input03 = document.querySelector('.input3-question-10')
-    const input04 = document.querySelector('.input4-question-10')
-    const input05 = document.querySelector('.input5-question-10')
+    const input = document.querySelector('.input-question-10')
 
-    const inputValues = `${input01.value}/${input02.value}/${input03.value}/${input04.value}/${input05.value}`
-
-    
-
-    const result = showBiggerNumbers(inputValues)
+    const result = showBiggerNumbers(input.value)
 
     answer.innerText = result
-
-    input01.value = ''
-    input02.value = ''
-    input03.value = ''
-    input04.value = ''
-    input05.value = ''
+    input.value = ''
 })
 
 form_11.addEventListener('submit', (e) => {
